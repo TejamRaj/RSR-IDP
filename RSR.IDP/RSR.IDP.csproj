@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20210623131633_InitialMigration.cs" />
+    <Compile Remove="Migrations\20210623131633_InitialMigration.Designer.cs" />
+    <Compile Remove="Migrations\20210623132648_InitialMigration2.cs" />
+    <Compile Remove="Migrations\20210623132648_InitialMigration2.Designer.cs" />
+    <Compile Remove="Migrations\20210627161147_addworkplaceactivities.cs" />
+    <Compile Remove="Migrations\20210627161147_addworkplaceactivities.Designer.cs" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="IdentityServer4" Version="4.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.1.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.4" />
+
+    <PackageReference Include="Serilog.AspNetCore" Version="3.2.0" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Folder Include="Entities\" />
+  </ItemGroup>
+</Project>

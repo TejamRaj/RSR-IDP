@@ -1,0 +1,28 @@
+﻿@using IdentityServer4.Extensions
+
+@{ string name = null;
+    if (!true.Equals(ViewData["signed-out"]))
+    {
+        name = Context.User?.GetDisplayName();
+    } }
+
+
+
+
+<nav class="navbar toolbar navbar-expand-lg navbar-light ">
+    <div class="container-fluid">
+        <img class="img-responsive"
+             width="100"
+             alt="Workplace On Tour Logo"
+             src="~/icon.png" />
+        <h2>Explore ! Work ! Evolve !</h2>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">           
+        </div>
+    </div>
+</nav>
+
+
+
